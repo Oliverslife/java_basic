@@ -3,15 +3,11 @@ package self.study.java;
 public class MultiplicationTable {
 	
 	void Multi() {
-		for(int i=1; i<=10; i++) {
-			System.out.printf("%d * %d = %d", 5, i, 5 * i).println();
-		}		
+		Multi(5);
 	}	
 	
 	void Multi(int n) {
-		for(int i=1; i<=10; i++) {
-			System.out.printf("%d * %d = %d", n, i, n * i).println();
-		}		
+		Multi(n, 1, 10);
 	}
 	
 	void Multi(int n, int from, int to) {
