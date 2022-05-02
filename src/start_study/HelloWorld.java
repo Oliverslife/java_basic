@@ -1,4 +1,4 @@
-package self.study.java;
+package start_study;
 
 public class HelloWorld {
 
