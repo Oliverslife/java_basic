@@ -2,20 +2,14 @@ package OOP;
 
 public class MotorBikeRunner {
 	public static void main(String[] args) {
-		MotorBike ducati = new MotorBike();
+		MotorBike ducati = new MotorBike(120);
 		MotorBike honda = new MotorBike();
 
-		ducati.start();
-		honda.start();
-
 		ducati.setSpeed(100);
-//		System.out.println(ducati.getSpeed());
-
-//		honda.setSpeed(80);
-//		System.out.println(honda.getSpeed());
-
+		honda.setSpeed(80);
 		
+		ducati.increaseSpeed(100);
+		ducati.decreaseSpeed(50);
 
 	}
-
 }

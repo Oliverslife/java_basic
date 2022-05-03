@@ -4,6 +4,14 @@ public class MotorBike {
 	// state
 	private int speed; // member variable
 
+	MotorBike() {
+		this(5);
+	}
+
+	MotorBike(int speed) {
+		this.speed = speed;
+	}
+
 	public int getSpeed() {
 		return speed;
 	}
@@ -13,9 +21,14 @@ public class MotorBike {
 			this.speed = speed;
 		}
 	}
-
-	void start() {
-			System.out.println("Bike Started");
-		}
-
+	
+	public void increaseSpeed(int howMuch) {
+		setSpeed(this.speed + howMuch);
 	}
+	
+	public void decreaseSpeed(int howMuch) {
+		setSpeed(this.speed - howMuch);
+	}
+
+
+}
